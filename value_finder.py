@@ -23,12 +23,12 @@ if __name__=="__main__":
     parser.add_argument("--key", type=str, default="a/b/c")
     args = parser.parse_args()
     object = args.object
-    print(type(object))
+    # print(type(object))
     key = args.key
     # object = {"a":{"b":{"c":"d"}}}
     # key = "a/b/c"
     # object_dict = to_dict(object)
     object_dict = json.loads(object)
-    print(type(object_dict))
+    # print(type(object_dict))
     value = get_value(object, key)
     print(value)
