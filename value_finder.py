@@ -27,7 +27,8 @@ if __name__=="__main__":
     key = args.key
     # object = {"a":{"b":{"c":"d"}}}
     # key = "a/b/c"
-    object_dict = to_dict(object)
+    # object_dict = to_dict(object)
+    object_dict = json.loads(object)
     print(type(object_dict))
     value = get_value(object, key)
     print(value)
