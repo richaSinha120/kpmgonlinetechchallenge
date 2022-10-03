@@ -19,7 +19,7 @@ def get_value(object,key):
     
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--object", type=object, default={"a":{"b":{"c":"d"}}})
+    parser.add_argument("--object", type=str, default={"a":{"b":{"c":"d"}}})
     parser.add_argument("--key", type=str, default="a/b/c")
     args = parser.parse_args()
     object = args.object
