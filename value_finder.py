@@ -1,4 +1,5 @@
 import json
+import argparse
 
 
 def to_dict(obj):
@@ -17,8 +18,11 @@ def get_value(object,key):
 
     
 if __name__=="__main__":
-    object = {"a":{"b":{"c":"d"}}}
-    key = "a/b/c"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--object", type=str, default={"a":{"b":{"c":"d"}}})
+    parser.add_argument("--key", type=str, default="a/b/c")
+    # object = {"a":{"b":{"c":"d"}}}
+    # key = "a/b/c"
     object_dict = to_dict(object)
     # print(type(object_dict))
     value = get_value(object, key)
