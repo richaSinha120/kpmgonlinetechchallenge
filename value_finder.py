@@ -23,7 +23,7 @@ if __name__=="__main__":
     parser.add_argument("--key", type=str, default="a/b/c")
     args = parser.parse_args()
     object = args.object
-    print(type(object_dict))
+    print(type(object))
     key = args.key
     # object = {"a":{"b":{"c":"d"}}}
     # key = "a/b/c"
