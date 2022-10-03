@@ -30,5 +30,5 @@ if __name__=="__main__":
     # object_dict = to_dict(object)
     object_dict = json.loads(object)
     # print(type(object_dict))
-    value = get_value(object, key)
+    value = get_value(object_dict, key)
     print(value)
